@@ -1,0 +1,279 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Rhea Senthil Kumar</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+
+  <canvas id="starfield"></canvas>
+
+  <div class="noise"></div>
+
+  <!-- NAV -->
+
+  <nav class="navbar">
+    <div class="nav-logo">RSK</div>
+
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#research">Research</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="hero-gradient"></div>
+
+    <div class="hero-content">
+
+      <p class="hero-eyebrow">
+        Computational Astrophysics · Machine Learning · Scientific AI
+      </p>
+
+      <h1 class="hero-title">
+        Rhea Senthil Kumar
+        <!-- <br>
+        for scientific discovery. -->
+      </h1>
+
+      <p class="hero-description">
+        M.S. Computer Science at UC San Diego.
+        Previously at MIT Lincoln Laboratory and UC Berkeley Space Sciences Laboratory.
+        Researching generative emulators, graph neural networks,
+        autonomous sensing systems, and machine learning for science.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#research" class="primary-btn">Explore Research</a>
+        <a href="#contact" class="secondary-btn">Contact</a>
+      </div>
+
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+
+  </section>
+
+  <!-- ABOUT -->
+
+  <section class="section" id="about">
+
+    <div class="section-header">
+      <p class="section-label">About</p>
+      <h2>Interdisciplinary research across AI, space systems, and scientific computing.</h2>
+    </div>
+
+    <div class="glass-card about-grid">
+
+      <div>
+        <p>
+          My work focuses on machine learning systems for scientific discovery,
+          including graph neural networks for autonomous sensing,
+          generative emulators for astrophysical and paleontological simulations,
+          and signal processing systems for space applications.
+        </p>
+      </div>
+
+      <div class="stats-grid">
+
+        <div class="stat-card">
+          <h3>80×</h3>
+          <p>Signal processing acceleration</p>
+        </div>
+
+        <div class="stat-card">
+          <h3>99%</h3>
+          <p>ML reconstruction accuracy</p>
+        </div>
+
+        <div class="stat-card">
+          <h3>MIT</h3>
+          <p>Lincoln Laboratory</p>
+        </div>
+
+        <div class="stat-card">
+          <h3>UCSD</h3>
+          <p>M.S. Computer Science</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- EXPERIENCE -->
+
+  <section class="section" id="experience">
+
+    <div class="section-header">
+      <p class="section-label">Experience</p>
+      <h2>Research, engineering, and scientific systems development.</h2>
+    </div>
+
+    <div class="timeline">
+
+      <div class="timeline-item glass-card">
+        <div class="timeline-top">
+          <span>2023 — Present</span>
+          <span>MIT Lincoln Laboratory</span>
+        </div>
+
+        <h3>Space Systems Analysis & Test Group</h3>
+
+        <p>
+          Developing ML systems for radar classification,
+          autonomous sensing coordination,
+          and signal cross-correlation pipelines.
+        </p>
+
+        <div class="tags">
+          <span>Python</span>
+          <span>GNNs</span>
+          <span>Reinforcement Learning</span>
+          <span>Signal Processing</span>
+        </div>
+      </div>
+
+      <div class="timeline-item glass-card">
+        <div class="timeline-top">
+          <span>2020 — 2023</span>
+          <span>UC Berkeley SSL</span>
+        </div>
+
+        <h3>COSI Collaboration</h3>
+
+        <p>
+          Developed ML reconstruction algorithms for gamma-ray event classification
+          and scientific software pipelines used across Berkeley and NASA teams.
+        </p>
+
+        <div class="tags">
+          <span>TensorFlow</span>
+          <span>Keras</span>
+          <span>Astrophysics</span>
+          <span>Scientific Computing</span>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- RESEARCH -->
+
+  <section class="section" id="research">
+
+    <div class="section-header">
+      <p class="section-label">Featured Research</p>
+      <h2>Current projects and scientific systems.</h2>
+    </div>
+
+    <div class="projects-grid">
+
+      <div class="project-card glass-card">
+        <div class="project-glow"></div>
+
+        <h3>Generative Emulators for Scientific Simulation</h3>
+
+        <p>
+          Building conditional generative models for paleontology and
+          population synthesis applications using modern deep generative architectures.
+        </p>
+
+        <div class="project-tags">
+          <span>Diffusion Models</span>
+          <span>Scientific ML</span>
+          <span>Simulation</span>
+        </div>
+      </div>
+
+      <div class="project-card glass-card">
+        <div class="project-glow"></div>
+
+        <h3>Autonomous Sensor Coordination with GNN-RL</h3>
+
+        <p>
+          Multi-agent graph neural network reinforcement learning systems
+          for intelligent sensor pointing and target tracking in space environments.
+        </p>
+
+        <div class="project-tags">
+          <span>Graph Neural Networks</span>
+          <span>PPO</span>
+          <span>Space Systems</span>
+        </div>
+      </div>
+
+      <div class="project-card glass-card">
+        <div class="project-glow"></div>
+
+        <h3>Signal Cross-Correlation Infrastructure</h3>
+
+        <p>
+          High-performance distributed signal processing infrastructure
+          achieving large-scale acceleration for radar and RF workflows.
+        </p>
+
+        <div class="project-tags">
+          <span>Distributed Systems</span>
+          <span>GPU Computing</span>
+          <span>RF</span>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+
+  <section class="section" id="contact">
+
+    <div class="section-header">
+      <!-- <p class="section-label">Contact</p> -->
+      <h2>Contact Information</h2>
+    </div>
+
+    <div class="contact-card glass-card">
+
+      <a href="mailto:senthilkumarrhea@gmail.com">
+        senthilkumarrhea@gmail.com
+      </a>
+
+      <a href="https://github.com/rheask8246" target="_blank">
+        GitHub
+      </a>
+
+      <a href="https://www.linkedin.com/in/rhea-senthil-kumar-338593188" target="_blank">
+        LinkedIn
+      </a>
+
+    </div>
+
+  </section>
+
+</body>
+</html>
