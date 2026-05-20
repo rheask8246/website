@@ -127,9 +127,9 @@ new IntersectionObserver((entries) => {
 
       anime({
         targets: entry.target,
-        opacity: [0,1],
-        translateY: [60,0],
-        duration: 1200,
+        opacity: [0.4, 1],
+        translateY: [32, 0],
+        duration: 900,
         easing: "easeOutExpo"
       });
 
@@ -168,4 +168,18 @@ document
   button.addEventListener("mouseleave", () => {
     button.style.transform = "";
   });
+});
+
+// Hide broken images; show gradient placeholders instead
+
+document.querySelectorAll("img").forEach((img) => {
+  const hideBroken = () => {
+    img.classList.add("is-hidden");
+  };
+
+  img.addEventListener("error", hideBroken);
+
+  if (img.complete && img.naturalWidth === 0) {
+    hideBroken();
+  }
 });
