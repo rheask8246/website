@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project write-up · Rhea Senthil Kumar</title>
+  <meta name="description" content="Project write-up by Rhea Senthil Kumar." />
+  <meta name="theme-color" content="#03060f" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='32' r='30' fill='%2303060f'/><circle cx='24' cy='32' r='6' fill='%235bbcff'/><circle cx='40' cy='32' r='6' fill='%23a78bfa'/><ellipse cx='32' cy='32' rx='22' ry='9' fill='none' stroke='%235bbcff' stroke-width='2' opacity='.6'/></svg>" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- post.js renders the write-up from posts.js; script.js then adds the shared visuals -->
+  <!-- KaTeX typesets the math in write-ups; without it the raw TeX is shown instead -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+  <script defer src="content.js"></script>
+  <script defer src="posts.js"></script>
+  <script defer src="post.js"></script>
+  <script defer src="script.js"></script>
+</head>
+
+<body data-page="post">
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <canvas id="starfield" aria-hidden="true"></canvas>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+
+  <nav class="navbar" aria-label="Primary">
+    <a href="index.html" class="nav-logo" aria-label="Home">
+      <span class="logo-orbit"><i></i><i></i></span>RSK
+    </a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+    <div class="nav-links">
+      <a href="index.html#about">About</a>
+      <a href="index.html#research">Research</a>
+      <a href="index.html#experience">Experience</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#talks">Talks</a>
+      <a href="index.html#contact" class="nav-cta">Contact</a>
+    </div>
+  </nav>
+
+  <main id="post" class="post-wrap"></main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Rhea Senthil Kumar · <a href="index.html">Back to home</a></p>
+  </footer>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Image viewer">
+    <button class="modal-close" aria-label="Close">×</button>
+    <img alt="">
+    <p class="lightbox-caption"></p>
+  </dialog>
+</body>
+</html>
